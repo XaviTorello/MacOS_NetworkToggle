@@ -32,12 +32,19 @@ It can be used the [precompiled App](https://github.com/XaviTorello/MacOSNetwork
 
 On Automator:
 1. Create a new file
+
 2. Select type -> Application
+
 3. Filter the actions by "shell", and select "run a shell script"
+
 4. On the App designer, select "/bin/bash" as a shell
+
 5. Paste the content of the [precompiled App](https://github.com/XaviTorello/MacOSNetworkToogle/NetworkToggle.sh "Network toggle script") on the textarea
+
 6. Click on "Options" button, and select the first checkbox to avoid parse stdin parameters
+
 7. Test it using the "Run" button
+
 8. Save it as a "Application" file
 
 Finally drag the resulting app to your Dock!
