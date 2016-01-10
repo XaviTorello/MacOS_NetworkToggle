@@ -11,7 +11,7 @@ This tool is provided as a set of files:
 * Automator instructions
 * Precompiled MacOS App
 
-This App trigger a message to MacOS notification center once the network status is toggled.
+This App trigger a message to MacOS notification center once the network status is toggled using [MacOS_Notify - Notification Center Dispatcher](https://github.com/XaviTorello/MacOS_Notify "MacOS Notification Center Dispatcher") tool.
 
 [More information](http://xaviertorello.cat/#portfolio "Xavier Torelló Porfolio")
 
