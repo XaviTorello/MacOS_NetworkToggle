@@ -25,7 +25,7 @@ With Automator it can be created a simple App to launch this shell script.
 
 ## How to install it?
 
-It can be used the [precompiled App](https://github.com/XaviTorello/MacOSNetworkToogle/NetworkToggle.sh "Network toggle script") or follow the instructions to create it manually
+It can be used the [precompiled App](https://github.com/XaviTorello/MacOS_NetworkToggle/NetworkToggle.sh "Network toggle script") or follow the instructions to create it manually
 
 
 ## Instructions 
