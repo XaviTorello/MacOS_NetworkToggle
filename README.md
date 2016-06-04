@@ -1,4 +1,4 @@
-# MacOSNetworkToogle
+# MacOS Network Toggle simple app
 
 ## Description
 
@@ -20,32 +20,27 @@ This App trigger a message to MacOS notification center once the network status 
 
 The Bash script calls the networksetup binary to toggle the status through the command line.
 
-With Automator it can be created a simple App to launch this shell script.
-
-
-## How to install it?
-
-It can be used the [precompiled App](https://github.com/XaviTorello/MacOS_NetworkToggle/NetworkToggle.sh "Network toggle script") or follow the instructions to create it manually
+With Script Editor and/or Automator it can be created a simple App to launch this shell script.
 
 
 ## Instructions 
 
-On Automator:
+On Script Editor:
 1. Create a new file
 
 2. Select type -> Application
 
-3. Filter the actions by "shell", and select "run a shell script"
+3. Paste the content of the [AppleScript](https://github.com/XaviTorello/MacOS_NetworkToggle/NetworkToggle.scpt) on script area
 
-4. On the App designer, select "/bin/bash" as a shell
+4. Set the correct path to the NetworkToggle.sh script
 
-5. Paste the content of the [precompiled App](https://github.com/XaviTorello/MacOSNetworkToogle/NetworkToggle.sh "Network toggle script") on the textarea
+5. (if needed) To provide a fresh user experience, grant sudo with nopasswd privileges for the NetworkToggle.sh script
 
-6. Click on "Options" button, and select the first checkbox to avoid parse stdin parameters
+6. Test it using the "Run" button
 
-7. Test it using the "Run" button
+7. Save it as a "Application" file
 
-8. Save it as a "Application" file
+8. Set the icon for your Applicaciton using the "Get information" section on right-click
 
 Finally drag the resulting app to your Dock!
 
