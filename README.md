@@ -1,4 +1,4 @@
-# MacOSNetworkToggle
+# MacOS Network Toggle simple app
 
 ## Description
 
@@ -30,7 +30,7 @@ On Script Editor:
 
 2. Select type -> Application
 
-3. Paste the content of the [AppleScript](https://github.com/XaviTorello/MacOSNetworkToggle/NetworkToggle.scpt) on script area
+3. Paste the content of the [AppleScript](https://github.com/XaviTorello/MacOS_NetworkToggle/NetworkToggle.scpt) on script area
 
 4. Set the correct path to the NetworkToggle.sh script
 
