@@ -2,21 +2,21 @@
 
 NETW=/usr/sbin/networksetup
 NOTIF=/usr/local/bin/notify
-NOTIF=/Users/k/notify.sh
+SUDO=/usr/bin/sudo
+
+MISSxarxa="The network goes "$ESTAT
+MISStitol="Networking"
 
 SERVEI="Ethernet"
-
 ESTAT="on"
 
-KIA=`$NETW -listnetworkserviceorder | grep $SERVEI | grep -v Devi | grep \* > /dev/null; echo $?`
+KIA=`$NETW -listnetworkserviceorder | grep $SERVEI | grep -v Devi | grep \* ; echo $?`
 
 ESTAT=$([ $KIA -eq 1 ] && echo "off" || echo "on")
 
-echo "Network goes "$ESTAT
-MISSxarxa="Network goes "$ESTAT
-MISStitol="Networking"
+$SUDO $NETW -setnetworkserviceenabled $SERVEI $ESTAT
 
-sudo $NETW -setnetworkserviceenabled $SERVEI $ESTAT
+echo $MISStitol "$MISSxarxa"
 $NOTIF $MISStitol "$MISSxarxa"
 
 exit
