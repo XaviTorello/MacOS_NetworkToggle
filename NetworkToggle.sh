@@ -18,4 +18,5 @@ MISStitol="Networking"
 
 sudo $NETW -setnetworkserviceenabled $SERVEI $ESTAT
 $NOTIF $MISStitol "$MISSxarxa"
+
 exit
